@@ -1,16 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Media.Media3D;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
@@ -137,4 +141,28 @@ namespace LectureDatePickerTime
             //runDisplay.Text = selectedDate.ToString();
         }
     }
+    //QUESTIONS: 
+    //What does a DateTime object represent(in terms of time )
+    //ANSWER : Present an instant of time which will present itself in date & time of day . 
+
+    //What does TimeSpan describe(in terms of time )
+    //ANSWER: TimeSpan represents a time interval (duration of time). 
+
+    //How do you get the time RIGHT NOW with DateTime?
+    //ANSWER: DateTime.Now 
+
+    //What kind of math do you have to do to get the result in years with TimeSpan?
+    //ANSWER: /365.0 
+    
+    //If given a DateTime object of 01/01/2023 and another with 01/01/2023, get a TimeSpan and do the math to get a result of 13
+    //ANSWER: 
+
+    //What is the key difference between the DatePicker and the Calander(similar to the combo box and list box)
+    //ANSWER: DatePicker allows to display calendar and pick date by selecting the drop menu. Calendar is an image of the calendar itself and just like date picker, you can select a date. 
+
+    //DatePicker and Calander have two important properties, which are they
+    //Property 1: You use it to get the users selected value from the time picker
+    //Property 2: You use this to make sure the time picker has a selected value
+
+    //ANSWER: 
 }
